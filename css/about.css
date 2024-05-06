@@ -1,0 +1,92 @@
+/* Author: Sonal(895168),Pusendra(898101),Asmita(899010),Max(889825)  */
+/* Styling for the Banner */
+.aboutBanner {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+  background-image: url(../img/aboutUsbanner.jpg);
+  background-blend-mode: multiply;
+  padding: 10px;
+}
+.aboutBanner h1 {
+  font-size: 50px;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 200px;
+}
+
+/* Styling for the Description */
+.description p {
+  width: 100%;
+  margin-bottom: 10px;
+  height: fit-content;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: grey;
+}
+
+/* Styling for the Index List Modern Block */
+.index-list-modern-block {
+  max-width: 100%;
+  position: relative;
+  padding: 15px;
+  text-align: justify;
+  color: #151515;
+  background: #f7f7f0;
+  margin: 0px 0px 4px 0px;
+}
+
+/* Styling for the Main Div */
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+}
+
+/* Styling for the Divider */
+.divider {
+  width: 46px;
+  height: 3px;
+  margin: 4px 0px;
+  background-color: #e6b140;
+}
+
+/* Styling for the About Tea Section */
+.about-tea {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the About Content */
+.about-content {
+  text-align: center;
+  padding: 12px;
+}
+
+/* Media Query When Window Screen is at least 481px and max 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mainDiv {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 50px;
+    background: #f7f7f0;
+  }
+
+  .subDiv {
+    width: 48%;
+  }
+}
+
+/* Media Query When Window Screen is at least 769px */
+@media screen and (min-width: 769px) {
+  .mainDiv {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px;
+  }
+  .subDiv {
+    width: 48%;
+  }
+}

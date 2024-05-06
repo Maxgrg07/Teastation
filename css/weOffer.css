@@ -1,0 +1,54 @@
+/* Author: Sonal(895168),Pusendra(898101),Asmita(899010),Max(889825)  */
+
+/* Styling for the main container */
+.container {
+    display: block;
+    background-color: #f7f7f0;
+    text-align: center;
+}
+
+/* Styling for the sub-container */
+.sub-container {
+    padding-top: 10px;
+}
+
+/* Styling for the offer list items */
+.offer-list {
+    display: inline-block;
+    padding: 20px;
+}
+
+/* Styling for the scrollable container */
+.scrollable-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Media Query When Window Screen is at least 481px and max 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Adjusting the width and margin of the image container */
+    .img-container {
+        width: 40%;
+        margin: 0px;
+    }
+    /* Changing the flex direction and adding flex wrap for responsiveness */
+    .scrollable-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Media Query When Window Screen is at least 769px */
+@media screen and (min-width: 769px) {
+    /* Adjusting the margin of the image container */
+    .img-container {
+        margin: 10px;
+    }
+    /* Changing the flex direction and adjusting justify content for larger screens */
+    .scrollable-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,148 @@
+/* Author: Sonal(895168),Pusendra(898101),Asmita(899010),Max(889825)  */
+
+/* Styling for the Add to Cart Banner */
+.addtocartBanner {
+  width: 100%;
+  height: 350px;
+  background-color: grey;
+  background-image: url(../img/checkout.png);
+  background-blend-mode: multiply;
+  padding: 10px;
+}
+.addtocartBanner h1 {
+  font-size: 50px;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 150px;
+}
+
+/* Styling for the Add to Cart table */
+#add-to-cart-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  color: black;
+}
+
+.add-to-cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+}
+
+.add-to-cart-table thead tr {
+  height: 75px;
+  background-color: #433e3d;
+  color: #ffffff;
+}
+
+.add-to-cart-table th,
+.add-to-cart-table td {
+  padding: 12px 15px;
+  height: 50px;
+  font-size: 15px;
+  border-bottom: 0.9px solid #9b9b9b;
+}
+
+/* Styling for the Add to Cart buttons */
+.form-input {
+  width: 100%;
+  padding: 13px;
+  color: #9b9b9b;
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  margin: 10px 0px;
+}
+
+.coupon-cart {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.receiptButtonDiv {
+  display: flex;
+}
+
+.mobile-view-coupon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.button {
+  width: 45%;
+  height: 45px;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #b0d13f;
+  border: none;
+}
+
+.button:hover {
+  background-color: #e6b140;
+}
+
+/* Styling for the Sidebar and Cart buttons */
+.sideBar {
+  margin-top: 20px;
+}
+
+.cart-background-button {
+  background: #b0d13f;
+}
+
+.checkout-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-button {
+  width: 90%;
+  margin: 10px 0px;
+}
+
+/* Media Query for Screens Between 481px and 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .coupon-cart-wrapper,
+  .sideBar_1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .coupon-cart {
+    width: 50%;
+  }
+  .sideBar {
+    width: 50%;
+  }
+  .cart-content-wrapper {
+    padding: 0px 20px;
+  }
+}
+
+/* Media Query for Screens Above 769px */
+@media screen and (min-width: 769px) {
+  .cart-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .coupon-cart-wrapper,
+  .sideBar_1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .coupon-cart {
+    width: 40%;
+  }
+  .sideBar {
+    width: 40%;
+  }
+  .cart-content-wrapper {
+    padding: 0px 100px;
+  }
+  #add-to-cart-table {
+    width: 80%;
+    align-self: center;
+  }
+}

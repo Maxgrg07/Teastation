@@ -1,0 +1,174 @@
+/* Author: Sonal(895168),Pusendra(898101),Asmita(899010),Max(889825)  */
+
+/* Styling for paragraphs */
+p {
+  margin: 0 !important;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+h2 {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+/* CSS for solid line at the tea types */
+hr.solid {
+  width: 200px;
+  margin-left: 80px;
+  border-style: solid;
+  border-color: #b0d13f;
+}
+#searchInput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* Styling for the header of a shop section */
+.head_shop {
+  text-align: center;
+  background-image: url(../img/shopbanner.jpg);
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgb(182, 179, 179);
+}
+
+/* Styling for the heading within the shop section header */
+.head_shop h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for subtext paragraphs */
+.sub_text p {
+  color: #9b9b9b;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+/* Styling for the inner content of the shop section */
+.inner_shop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 70px;
+}
+
+/* Styling for the shop display containers */
+.shops_display {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Hover effect for shop display containers */
+.shops_display:hover {
+  background-color: #f7f7f7;
+}
+
+/* Styling for shop images */
+.shop_images img {
+  width: 100%;
+  height: 280px;
+}
+
+/* Styling for shop prices section */
+.prices_shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+/* Styling for price text */
+.prices_shop p {
+  font-size: 25px;
+  padding-right: 5px;
+  font-weight: 600;
+  color: #000000;
+  padding-top: 0px;
+}
+
+/* Styling for price span */
+.prices_shop span {
+  font-weight: 300;
+  opacity: 0.4;
+  position: relative;
+}
+
+/* Styling for shop detail buttons */
+.shops_detail button {
+  border-radius: 3px;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #b0d13f;
+  border-color: #b0d13f;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #e6b140;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+/* Styling for shop names */
+.shop_name {
+  color: #757575;
+  font-size: 18px;
+}
+
+/* Hover effect for shop names */
+.shop_name:hover {
+  color: #bfd641;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main_inner_sec {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+  }
+  .shops_display {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .search-teas{
+    padding:10px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main_inner_sec {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+  }
+
+  .shops_display {
+    width: 25%;
+  }
+  #searchInput {
+    width:30%;
+  }
+}
